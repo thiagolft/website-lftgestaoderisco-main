@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    :root {
+      --background: 222.2 84% 4.9%; /* Azul muito escuro, quase preto */
+      --foreground: 210 40% 98%; /* Branco */
+      
+      --card: 220 40% 10%; /* Azul um pouco mais claro que o fundo */
+      --card-foreground: 210 40% 98%; /* Branco */
+      
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+      
+      --primary: 217.2 91.2% 59.8%; /* Azul vibrante (Tailwind blue-500) */
+      --primary-foreground: 210 40% 98%; /* Branco */
+      
+      --secondary: 215 30% 25%; /* Azul escuro acinzentado */
+      --secondary-foreground: 210 40% 98%; /* Branco */
+      
+      --muted: 215 25% 35%; /* Cinza azulado */
+      --muted-foreground: 215 20.2% 75.1%; /* Cinza claro */
+      
+      --accent: 210 80% 65%; /* Azul claro para destaque (Tailwind sky-400) */
+      --accent-foreground: 222.2 47.4% 11.2%; /* Azul escuro para texto sobre accent */
+      
+      --destructive: 0 70% 50%; /* Vermelho para alertas */
+      --destructive-foreground: 210 40% 98%;
+      
+      --border: 215 30% 40%; /* Cinza azulado para bordas */
+      --input: 215 30% 40%;
+      --ring: 217.2 91.2% 59.8%; /* Azul vibrante para anéis de foco */
+      
+      --radius: 0.75rem;
+    }
+
+    /* Configuração para o tema escuro, se necessário no futuro */
+    .dark {
+      /* Manter as mesmas cores, pois o design já é escuro */
+    }
+
+    body {
+      @apply bg-background text-foreground antialiased;
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+    
+    .font-apple { /* Mantido para compatibilidade caso precise voltar, mas Poppins será o padrão */
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .font-poppins {
+      font-family: 'Poppins', sans-serif;
+    }
+
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    ::-webkit-scrollbar {
+      width: 10px;
+      height: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: hsl(var(--secondary));
+    }
+    ::-webkit-scrollbar-thumb {
+      background: hsl(var(--primary));
+      border-radius: 10px;
+      border: 2px solid hsl(var(--secondary));
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: hsl(var(--accent));
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      @apply font-semibold; /* Ajustado para semibold, bold pode ser aplicado individualmente */
+    }
+
+    .text-shadow {
+      text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .text-shadow-lg {
+      text-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    /* Glassmorphism for header example */
+    .glass-header {
+      background: rgba(255, 255, 255, 0.1); /* Light background with opacity */
+      backdrop-filter: blur(10px); /* Blur effect */
+      -webkit-backdrop-filter: blur(10px); /* For Safari */
+      border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border */
+    }
