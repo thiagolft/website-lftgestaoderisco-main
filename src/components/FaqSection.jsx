@@ -74,7 +74,7 @@ const FaqSection = () => {
     },
     {
       question: "Como funciona o Fully?",
-      answer: "O Fully é uma solução completa de seguro de vida que oferece diversas coberturas, incluindo proteção financeira em caso de falecimento, invalidez e doenças graves. Ele é flexível e pode ser adaptado às suas necessidades específicas, garantindo segurança e tranquilidade para você e seus beneficiários.",
+      answer: "Fully da Prudential é uma plataforma de bem-estar que recompensa a atividade física e incentiva o cuidado com a saúde física, mental e financeira. É uma iniciativa da Prudential que visa estimular um estilo de vida mais saudável, oferecendo benefícios e recompensas para quem cumpre metas semanais de atividade física e cuida do bem-estar. ",
       isLongQuestion: false
     },
     {
